@@ -15,7 +15,7 @@ The container will isolate the CSS rules in the remote app from leaking into the
 
 ### 2. Put an element with style `all: initial;` around the Shadow DOM container.
 
-By default the styles inside the Shadow DOM will inherit those coming from the Light DOM. The `all: initial` rule stops this inheritance and isolates the remote app from the host's CSS.
+By default the styles inside the Shadow DOM will inherit those coming from the Light DOM. The `all: initial` rule stops this inheritance and isolates the remote app from the host's CSS. To understand why read [this](https://stackoverflow.com/questions/49709676/light-dom-style-leaking-into-shadow-dom).
 
 ### 3. Configure the style loader of the remote app to inject styles inside the Shadow DOM
 
